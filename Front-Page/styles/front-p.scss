@@ -1,0 +1,77 @@
+@import '../../styles/mixin';
+
+
+body    {
+    background-image: url(/images/resort30.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.flip {
+    
+    position: relative;
+    height: 910px;
+}
+
+.click {
+    
+    @include flex-config($flex-direction: column, $align-items: center)
+    
+}
+
+.head-cal h2 {
+    @include flex-config($justify-content: center);
+    font-size: 6rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $headertxt;
+    animation: slide-1 20s ease infinite;
+}
+
+.head-cale h2 {
+    @include flex-config($justify-content: center);
+    font-size: 4rem;
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: $headertxt;
+    animation: slide-2 20s ease infinite;
+}
+
+.month-row1 {
+    @include months;
+    align-content: center;
+    justify-content: center; 
+}   
+
+.month-row2 {
+    @include months;
+    align-content: center;
+    justify-content: center; 
+}   
+
+.spacer-1 {
+    height: 435px;
+}
+
+a {
+    @include btn1 (#020202, #e93939, bottom, right);
+    text-decoration: none;
+  }
+
+.btn1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: .5rem;
+    &:focus { outline: 2px dotted #55d7dc; }
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include animation-mixin(slide-1, -100, 100%);
+  @include animation-mixin(slide-2, 0, 200%);

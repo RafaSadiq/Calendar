@@ -1,0 +1,131 @@
+@import "../../../styles/mixin";
+
+
+$background: url(/images/Maldives1.jpg);
+$back-color: rgba(211, 211, 211, 0.192);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/sunset7.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(2px 4px 6px black);  
+}
+
+.jan-header { 
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    filter: brightness(50%);
+}
+.jan-yr {
+    @include flex-config($justify-content:flex-end);
+    filter: brightness(650%)
+}
+
+h3 {
+    @include header;
+     
+}
+
+.weekdays {
+    @include align1;
+   
+}   
+
+.sun {
+    @include weekend;
+    width: 248px;
+    left: 50px;
+}
+
+.mon {
+    @include weekend;
+    width: 247px;
+    left: 309px;
+}
+
+.tue {
+    @include weekend;
+    width: 247px;
+    left: 568px;
+}
+
+.wed {
+    @include weekend;
+    width: 247px;
+    left: 827px;
+}
+
+.thu {
+    @include weekend;
+    width: 247px;
+    right: 568px;
+}
+
+.fri {
+    @include weekend;
+    width: 248px;
+    right: 308px;
+}
+
+.sat {
+    @include weekend;
+    width: 247px;
+    right: 50px;
+}
+
+.jan-mon {
+    @include grid;
+}
+
+.jan-days {
+    @include align;
+    position: relative;
+}   
+
+.jan-days :nth-child(-n+3) {
+    background: $back-color;
+}
+
+.jan-days :nth-child(n+35) {
+    background-color: $back-color;
+}
+
+.jan-days :nth-child(n+4):nth-child(-n+34) {
+    background-size:255px;
+    background-repeat: no-repeat;
+    animation: moves0 15s infinite ;
+    border: none;
+    cursor: pointer;
+    @include day1 (transparent, #26fd00);
+}
+
+@keyframes moves0 {
+    from {background-image: url('/images/sunset2.jpg');}
+    to {background-image: url('/images/resort9.jpg');}
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    padding: 50px;
+    font-size: 4em;
+    background: transparent;
+    margin-left: 50px;
+    @include flex-config($flex-direction:column, $justify-content:center, $align-items:center);
+}
+
+button i {
+    color: $headertxt;
+}
+
+
+.day1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    @include flex-config($justify-content:flex-end);
+    padding-right: 5px;
+}

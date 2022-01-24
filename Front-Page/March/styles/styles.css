@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/sunset5a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+}
+
+.jan-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.jan-yr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-filter: brightness(650%);
+          filter: brightness(650%);
+}
+
+h3 {
+  color: #5feb1e;
+  font-size: 5em;
+  margin: 0;
+}
+
+.weekdays {
+  font-size: 1rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.sun {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  width: 248px;
+  left: 50px;
+}
+
+.mon {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  width: 247px;
+  left: 309px;
+}
+
+.tue {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  width: 247px;
+  left: 568px;
+}
+
+.wed {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  width: 247px;
+  left: 827px;
+}
+
+.thu {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  width: 247px;
+  right: 568px;
+}
+
+.fri {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  width: 248px;
+  right: 308px;
+}
+
+.sat {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  width: 247px;
+  right: 50px;
+}
+
+.jan-mon {
+  display: -ms-grid;
+  display: grid;
+  margin: 30px 30px;
+  height: 750px;
+}
+
+.jan-days {
+  font-size: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  margin: 20px;
+  position: relative;
+}
+
+.jan-days :nth-child(-n+2) {
+  background: rgba(211, 211, 211, 0.192);
+}
+
+.jan-days :nth-child(n+34) {
+  background-color: rgba(211, 211, 211, 0.192);
+}
+
+.jan-days :nth-child(n+3):nth-child(-n+33) {
+  background-size: 255px;
+  background-repeat: no-repeat;
+  -webkit-animation: moves0 15s infinite;
+          animation: moves0 15s infinite;
+}
+
+@-webkit-keyframes moves0 {
+  from {
+    background-image: url("/images/sunset7a.jpg");
+  }
+  to {
+    background-image: url("/images/resort3a.jpg");
+  }
+}
+
+@keyframes moves0 {
+  from {
+    background-image: url("/images/sunset7a.jpg");
+  }
+  to {
+    background-image: url("/images/resort3a.jpg");
+  }
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  padding: 50px;
+  font-size: 4em;
+  background: transparent;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button i {
+  color: #5feb1e;
+}
+
+.day1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
