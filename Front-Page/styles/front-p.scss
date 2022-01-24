@@ -73,5 +73,5 @@ a {
     flex-direction: row;
   }
 
-  @include animation-mixin(slide-1, -100, 100%);
-  @include animation-mixin(slide-2, 0, 200%);
+  @include animation-mixin(slide-1, 0, 72%);
+  @include animation-mixin(slide-2, 0, 68%);
