@@ -1,13 +1,14 @@
 @import '../../styles/mixin';
 
-
-body    {
-    background-image: url(/images/resort30.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
+body {
+    margin: 0;
+    padding: 0;
 }
+// body    {
+//     background: url(/images/resort7.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
 
 .flip {
     
@@ -22,12 +23,13 @@ body    {
 }
 
 .head-cal h2 {
+    border: 1px solid red;
     @include flex-config($justify-content: center);
     font-size: 6rem;
     margin-top: 0;
     margin-bottom: 0;
     color: $headertxt;
-    animation: slide-1 20s ease infinite;
+    // animation: slide-1 20s ease infinite;
 }
 
 .head-cale h2 {
@@ -36,7 +38,7 @@ body    {
     margin-top: 50px;
     margin-bottom: 0;
     color: $headertxt;
-    animation: slide-2 20s ease infinite;
+    // animation: slide-2 20s ease infinite;
 }
 
 .month-row1 {
@@ -52,7 +54,7 @@ body    {
 }   
 
 .spacer-1 {
-    height: 435px;
+    height: 700px;
 }
 
 a {
@@ -73,5 +75,21 @@ a {
     flex-direction: row;
   }
 
-  @include animation-mixin(slide-1, 0, 72%);
-  @include animation-mixin(slide-2, 0, 68%);
+// @include animation-mixin(slide-1, 0, 72%);
+// @include animation-mixin(slide-2, 0, 68%);
+
+#myVideo {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    // right: 0;
+    // bottom: -300px;
+}
+
+@media(max-width: 480px) {
+    a {
+        color: red;
+    }
+}

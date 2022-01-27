@@ -142,7 +142,6 @@ h3 {
 }
 
 .feb-days :nth-child(n+3):nth-child(-n+30)::before, .feb-days :nth-child(n+3):nth-child(-n+30)::after {
-  border: 0 solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   content: '';
@@ -169,7 +168,8 @@ h3 {
 }
 
 .feb-days :nth-child(n+3):nth-child(-n+30):hover::before, .feb-days :nth-child(n+3):nth-child(-n+30):hover::after {
-  border-color: #26fd00;
+  background-image: url(/images/sunset4a.jpg);
+  background-position: center;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
